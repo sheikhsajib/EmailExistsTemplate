@@ -21,38 +21,45 @@
         <nav class="navbar navbar-expand-lg ">
           <div class="container-fluid">
             <a href="./index.html"><img  class="logo" src="./image/logo.png" alt="logo"></a>
+            
+            <!-- For Mobile Version -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="menu-item navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link " aria-current="page" href="./index.html"> Home </a>
+                  <a class="nav-link " aria-current="page" href="./index.html"> Single Email Varify </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
+                  <a class="nav-link" href="pages/bulk.html"> Bulk Email Varify </a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Email Verifier
+                  <a class="nav-link" href="pages/email-finder.html" >
+                    Email Finder
                   </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <li><a class="dropdown-item" href="./index.html">Single Verifier</a></li>
                     <li><a class="dropdown-item" href="./pages/bulk.html">Bulk Verifier</a></li>
                     <li><a class="dropdown-item" href="./pages/email-finder.html">Email Finder</a></li>
-                  </ul>
+                  </ul> -->
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link " href="#" tabindex="-1" aria-disabled="true"> Contact</a>
+                  <a class="nav-link " href="#" tabindex="-1" aria-disabled="true"> About </a>
                 </li>
                 <li class="nav-item">
+                  <a class="nav-link " href="#" tabindex="-1" aria-disabled="true"> Contact </a>
+                </li>
+                <!-- <li class="nav-item">
                   <a type="button" class="nav-link rounded-pill border " href="#" tabindex="-1" aria-disabled="true">Free Sign Up</a>
-                </li>
+                </li> -->
               </ul>
-              <div class="user">
-                
-                <a href="#"><img src="./image/user.png" alt=""></a>
-              </div>
+
+
+              <!-- <div class="user">
+                  <a href="#"><img src="./image/user.png" alt=""></a>
+              </div> -->
             </div>
           </div>
         </nav>    <!-- ---------- Navbar Finish ------------ -->
@@ -65,14 +72,12 @@
     <!-- ----------Header-area-End------------ -->
 
     <!-- ----------main-body-area-start------------ -->
-        <div class="main-div">
+        <main class="main-div">
           <div class="container-fluid">
           
           <div class="row">
 
-
-<!--             
-            <div class="col-md-3  col-lg-3 col-xl-3 ">
+<!--        <div class="col-md-3  col-lg-3 col-xl-3 ">
               <div class="sidebar-area">
                  
                   <a href="./pages/account.html" type="button">Account</a>
@@ -83,199 +88,63 @@
               </div>
             </div> -->
 
-
-
-
             <div class="">
               <div class="content-area">
 
                   <div class="container text-center">
                     <div class="row d-flex justify-content-around">
-
-                      <div class="card" style="width: 18rem;" >
+                    
+                      <div class="card card_active" style="width: 18rem;" >
                         <div class="card-body"  data-bs-toggle="collapse" data-bs-target="#collapseSingleEmail" aria-expanded="true" aria-controls="collapseSingleEmail">
-                        
                           <h5 class="card-title"> Single Email Varifyer </h5>
                             <br>
-                          <p class="card-text">   You can varify an Email by using this Option 
-                            
-                          </p>
-                        
+                          <p class ="card-text"> You can varify an Email by using this Option 
+                          </p> 
                         </div>
                       </div>
 
-
-                      <div class="card" style="width: 18rem;">
-                        <div class="card-body" data-bs-toggle="collapse" data-bs-target="#collapseBulkEmail" aria-expanded="false" aria-controls="collapseBulkEmail">
-                          <h5 class="card-title"> Bulk Email Varifyer </h5>
-                            <br>
-                          <p class="card-text"> 
-                            You can varify an Email by using this Option 
-                          </p>
-                        </div>
-                      </div>
+                    </div> <!--Row Flex Justify div-->
 
 
-                      <div class="card" style="width: 18rem;">
-                        <div class="card-body" data-bs-toggle="collapse" data-bs-target="#collapseEmailFinder" aria-expanded="false" aria-controls="collapseEmailFinder">
-                          <h5 class="card-title"> Email Finder </h5>
-                            <br>
-                          <p class="card-text"> 
-                            You can Find some possible valid Emails by using this Option 
-                          </p>
-                        </div>
-                      </div>
+                    <div class="accordion accordion-details" id="accordionExample">
+                      
+                      <div class="accordion-item">
+                        <div id="collapseSingleEmail" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
 
 
-                      <div class="accordion" id="accordionExample">
-                        
-                        <div class="accordion-item">
-                          <div id="collapseSingleEmail" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
+                            <div class="email-box">
+                              <form>
+                                  <h3>Insert Your Email Address</h3>
+                                  <input placeholder="address@domain.com" type="email" class="form-control"    id="exampleInputEmail1">
 
 
-                              <div class="email-box">
-                                <form>
-                                    <h3>Insert Your Email Address</h3>
-                                    <input placeholder="address@domain.com" type="email" class="form-control"    id="exampleInputEmail1">
-                                   <button type="submit">Check</button>
-                                </form>
-                              </div>  
-                            
-                            
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="accordion-item">
-                          <div id="collapseBulkEmail" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-
-                              <div class="email-box">
-                                <form id="bulk-form">
-                                  <h3>Insert Bulk Amount Email Addresses</h3>
-                                    <textarea placeholder="Maximum 50 Email for Free Version" type="email" class="form-control" id="exampleInputEmail1" rows="4"></textarea>
-                                   <button type="submit">Check</button>
-                                </form>
-                              </div>   
-
-
-                              <div class="email-table">
-                                <table class="table table-bordered">
-                                  <thead>
-                                    <tr>
-                                      <th>Email Address</th>
-                                      <th>Status</th>
-                                    </tr>
-                                  </thead>
-                                  <tbody>
-                                    <tr>
-                                      <td> </td>
-                                      <td> </td>
-                                      
-                                    </tr>
-                                    <tr>
-                                      <td> </td>
-                                      <td> </td>
-                                      
-                                    </tr>
-                                    <tr>
-                                      <td> </td>
-                                      <td> </td>
-                                      
-                                    </tr>
-                                    <tr>
-                                      <td> </td>
-                                      <td> </td>
-                                      
-                                    </tr>
-                                    
-                                  </tbody>
-                                  
-                                </table>
-                                <div class="form-btn ">
-                                  <button>Delete</button>
-                                  <button >Download</button>
-                                </div>
-                            </div>
-                              <!-- After checking Email List -->
-           
-
-
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="accordion-item">
-                          <div id="collapseEmailFinder" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                              
-                                 
-            <div class="">
-              <div class="content-area">
-                  <div class="container">
-                    <div class="row">
-                      <div class="email-box">
-                        <form id="email-f">
-                            <input type="text" placeholder="First Name"  >
-                            <input type="text" placeholder="Last Name"  >
-                            <input type="text" placeholder="Domain"  >
-                            <button class="mt-3" type="submit">Check</button>
-                        </form>
-                      </div>   
-                      <div class="email-table">
-                        <table class="table table-bordered">
-                          <thead>
-                            <tr>
-                              <th>Email Address</th>
-                              <th>Status</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td> </td>
-                              <td> </td>
-                              
-                            </tr>
-                          </tbody>
+                                
+                                  <button type="submit">Check</button>
+                              </form>
+                            </div>  
                           
-                        </table>
-                        <div class="form-btn ">
-                          <button>Delete</button>
-                          <button >Download</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-            </div>
-                            
-                            
-                            
-                            </div>
+                          
                           </div>
                         </div>
                       </div>
 
 
 
+                    </div> <!-- Accordion Details Done -->
 
-                       
-
-
-                 
                   </div>
-              </div>
+
             </div>
           </div>
           
           
           
           </div>
-        </div>
-    <!-- ----------main-body-area-start------------ -->
+        </main> <!--  main div Finish -->
+    <!-- ----------main-body-area-start-------------->
 
-    <!-- ----------Footer-area-start------------ -->
+    <!-- ----------Footer-area-start-------------->
         <footer class="py-5">
           <div class="container">
             <div class="row">

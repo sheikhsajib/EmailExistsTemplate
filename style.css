@@ -7,16 +7,17 @@ body{
     
 }
 /* ----------------- */
+
 .header-area{
  /*   background-image: linear-gradient( #69B7FF , #EDFAFF);        */
-    background-color: #69B7FF;
+    background-color: #90DEFF;
 }
 
 img.logo {
     cursor: pointer;
     width: 100px;
-    box-shadow: border-box; 
-   
+    box-shadow: border-box;
+
 }
 
 .menu-item li a{
@@ -26,8 +27,16 @@ img.logo {
     font-size: 18px;
     margin-left: 30px;
     padding: 8px;
+    transition: 0.25s;
+}
+
+.menu-item li a:hover{
+    color: ;
+    background-color: #46b0dd;
 
 }
+
+
 .dropdown-menu{
     background-color: transparent!important;
     box-shadow: 5px 5px 5px 5px #555;
@@ -49,19 +58,36 @@ nav .user img{
 }
 
 
-
-
 /*------------------ Accordion Area Start -----------------*/
+
+input{
+    border-radius: 5px;
+}
+
+button{
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px ;
+    border:  1px solid #555;
+    border-width: 2px;
+    transition: 0.25s;
+
+}
+button:hover{
+    scale: 1.1;
+    background-color: #90DEFF;
+}
+
+
 .card{
     transition: 0.25s ease-in-out;
 }
 .card:hover {
     scale: 1.1;
-    background-color:#69B7FF;
+    background-color:#90DEFF;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-
-
 
 .accordion-button:not(.collapsed) {
     color: #FFF  !important;
@@ -69,60 +95,33 @@ nav .user img{
   }
 
 
-
-
-
-
-
-
-
-
-/* -------------------- */
-
- .social-area{
-    float: right;
-    cursor: pointer;
-}
-
-
 /* -----main-div-area----- */
-.sidebar-area{
-    position: relative;
-    display: block;
-    /* background: linear-gradient(to right,#90DEFF, #EDFAFF); */
-    background-color: antiquewhite;
-    height: 100%;
-    padding-top: 150px;
-    
+.main-div{
+    min-height: 500px;
+    margin: 50px 0;
 }
-.sidebar-area a{
-    display: block;
-    margin: 0 auto;
-    padding: 8px;
-    margin-top: 20px;
-    width: 200px;
-    border: none;
-    border-radius: 10px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 18px;
-    background-image: linear-gradient(to top left, #90DEFF ,#fff);
+
+.card a{
+    color: #555 ;
     text-decoration: none;
-    text-align: center;
-    color: #000;
 }
-.content-area{
-    padding-top: 2%;
-    padding-bottom: 5%;
+.card_active{
+    color: #555 ;
+    background-color: #90DEFF;
 }
-.content-area button{
-    padding: 2px 18px;
-    border:  1px solid #69B7FF;
-    border-radius: 15px;
-    margin-top: 5px;
-    
+.card a:hover{
+    color: #555 ;
+    text-decoration: none;
 }
-/* --------------------index-page-form-area----------------- */
+
+.accordion-details{
+    margin-top: 50px;
+}
+.accordion-item {  /***** Overwriting Bootstrap Class ********/
+    border: none;
+    box-shadow: 0px 0px 5px  #90DEFF  ;
+}
+
 .email-box form{
     /* width: 80%; */
 }
@@ -132,6 +131,10 @@ nav .user img{
    border:  1px solid #555;
    border-width: 2px;
 }
+.email-box form button{
+
+}
+
 .email-table table {
     /* width: 80%; */
     border-width: 3px 0!important;
@@ -151,9 +154,17 @@ nav .user img{
   }
 /* --------------------Email-Finder-page-form-area-------------------- */
 #email-f input{
-    width: 100%;
-    margin: 0;
-    padding: 25px;
+    width: 80%;
+    margin: 5px;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: italic;
+    font-size: 20px;
+}
+#email-f input{
+    width: 80%;
+    margin: 5px;
+    padding: 10px;
     font-family: 'Roboto', sans-serif;
     font-weight: italic;
     font-size: 20px;
@@ -180,12 +191,57 @@ nav .user img{
 .right-form form{
     border-radius: 30px;
 }
+
+
+
+
+/* 
+.sidebar-area{
+    position: relative;
+    display: block;
+    background-color: antiquewhite;
+    height: 100%;
+    padding-top: 150px;
+    
+}
+
+.sidebar-area a{
+    display: block;
+    margin: 0 auto;
+    padding: 8px;
+    margin-top: 20px;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    background-image: linear-gradient(to top left, #90DEFF ,#fff);
+    text-decoration: none;
+    text-align: center;
+    color: #000;
+}
+.content-area{
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+.content-area button{
+    padding: 2px 18px;
+    border:  1px solid #69B7FF;
+    border-radius: 15px;
+    margin-top: 5px;
+    
+} */
+/* --------------------index-page-form-area----------------- */
+
+
+
+
+/* --------------------index-page-form-area----------------- */
+
 /* ---------footer-area------------- */
 footer{
-    
-    background-image: linear-gradient(to top, #69B7FF , #EDFAFF);
-    height: 100%;
-    width: 100%;
+background-color: #ccc;
    
 }
 footer a, p{
@@ -196,17 +252,30 @@ footer a, p{
 footer li{
     list-style: none;
     float: left;
-    
+
 }
+
+  /* -------------------- */
+
+.social-area{
+    float: right;
+    cursor: pointer;
+}
+ .social-area ul li a i:hover{
+    color: #69B7FF ;
+}
+
+
+
 .privacy-area a{
     padding-right: 20px;
     text-decoration: none;
-    color: #000;
-
+    color: #333;
+    transition: 0.25s;
 }
 .privacy-area a:hover{
     text-decoration: dashed;
-    color: blue;
+    color: #69B7FF ;
 }
 .social-area ul li a{
     text-decoration: none;
@@ -215,11 +284,8 @@ footer li{
     padding-right: 15px;
     
 }
-.social-area i:hover{
-    
-    color: blue;
-    
-    
+.social-area i{
+    transition: 0.25s;
 }
 
 
